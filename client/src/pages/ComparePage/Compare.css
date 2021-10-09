@@ -1,9 +1,25 @@
 .container {
   display: flex;
   justify-content: center;
+  background-color: #edf9ff;
 }
 
 .inputFields {
   display: flex;
   flex-direction: column;
+}
+
+.calcbutton {
+  margin-top: 30px;
+}
+
+.graph {
+  display: flex;
+  justify-content: center;
+  background-color: #edf9ff;
+}
+
+.graph {
+  display: flex;
+  justify-content: center;
 }
