@@ -32,19 +32,23 @@ function Compare() {
         {page ? (
           // Monthly Investment
           <CardContent>
-            <FormControl>
-              <InputLabel>Monthly Investment Amount (Rs)</InputLabel>
-              <Input></Input>
+            <FormControl className="box">
+              <InputLabel htmlFor="my-input">
+                Monthly Investment Amount (Rs)
+              </InputLabel>
+              <Input id="my-input" aria-describedby="my-helper-text" />
             </FormControl>
 
-            <FormControl>
-              <InputLabel>Investment Period (years)</InputLabel>
-              <Input></Input>
+            <FormControl className="box">
+              <InputLabel htmlFor="my-input">
+                Investment Period (years)
+              </InputLabel>
+              <Input id="my-input" aria-describedby="my-helper-text" />
             </FormControl>
 
-            <FormControl>
-              <InputLabel>Expected Return (%)</InputLabel>
-              <Input></Input>
+            <FormControl className="box">
+              <InputLabel htmlFor="my-input">Expected Return (%)</InputLabel>
+              <Input id="my-input" aria-describedby="my-helper-text" />
             </FormControl>
 
             <Button> Calculate </Button>
@@ -56,17 +60,17 @@ function Compare() {
         ) : (
           // Lump Sum
           <CardContent>
-            <FormControl>
+            <FormControl className="box">
               <InputLabel>Investment Amount (Rs)</InputLabel>
               <Input></Input>
             </FormControl>
 
-            <FormControl>
+            <FormControl className="box">
               <InputLabel>Investment Period (years)</InputLabel>
               <Input></Input>
             </FormControl>
 
-            <FormControl>
+            <FormControl className="box">
               <InputLabel>Expected Return (%)</InputLabel>
               <Input></Input>
             </FormControl>

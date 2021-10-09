@@ -13,3 +13,8 @@
   width: 100%;
   margin-left: 70;
 }
+
+.box {
+  display: flex;
+  margin-bottom: 20;
+}
