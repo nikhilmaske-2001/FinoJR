@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+marquee{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 93vh;
+    
+}
+.brand{
+    width: 35px;
+    height: 35px;
+}
+.navbar-brand{
+    margin-left: 10px;
+}
+.about{
+     font-family: 'IBM Plex Sans', sans-serif;;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item h5{
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.carousel-item p{
+    font-family: cursive;
+}
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+}
+
+
+.carousel-inner .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.carousel-inner .carousel-item.active{
+    opacity: 0.9;
+}
+.links p a{
+    position: relative;
+    color: #fff;
+}
+.links p:hover a{
+color: yellow;
+
+}
