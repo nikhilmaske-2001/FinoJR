@@ -1,0 +1,15 @@
+.root {
+  max-width: 350;
+  min-height: 550;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30;
+}
+
+.upButtons {
+  width: 100%;
+  margin-left: 70;
+}
