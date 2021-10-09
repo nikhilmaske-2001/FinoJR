@@ -1,12 +1,12 @@
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
-import Home from "./pages/HomePage/Home";
+import Compare from "./pages/ComparePage/Compare";
 
 function App() {
   return (
     <div className="App">
       <TopBar />
-      <Home />
+      <Compare />
     </div>
   );
 }
