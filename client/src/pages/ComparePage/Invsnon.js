@@ -1,36 +1,39 @@
-import React from "react";
 import {
   Button,
   Card,
   CardContent,
-  FormControl,
-  Input,
-  InputLabel,
+  TextField,
+  Toolbar,
   Typography,
 } from "@material-ui/core";
-import "./Compare.css";
+import React from "react";
 
 function Invsnon() {
   return (
     <div>
-      <Typography>
-        <h1>What if you invested x Rs vs not invested that x Rs</h1>
-      </Typography>
-      <Card class="root" variant="outlined">
-        <CardContent class="content">
-          <FormControl>
-            <InputLabel>You invested (Rs)</InputLabel>
-            <Input></Input>
-          </FormControl>
-          <FormControl>
-            <InputLabel>Investment period (years)</InputLabel>
-            <Input></Input>
-          </FormControl>
-          <FormControl>
-            <InputLabel>Expected Return (%)</InputLabel>
-            <Input></Input>
-          </FormControl>
-          <Button className="calcbutton">Calculate</Button>
+      <Card class="container">
+        <CardContent>
+          <Typography>
+            <h1>If you invest Rs x vs If you not invest Rs x</h1>
+          </Typography>
+          <div class="inputFields">
+            <TextField
+              id="outlined-basic"
+              label="Invest Amount (Rs)"
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Investment period (years)"
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Expected Return (%)"
+              variant="outlined"
+            />
+          </div>
+          <Button>Calculate</Button>
         </CardContent>
       </Card>
     </div>
