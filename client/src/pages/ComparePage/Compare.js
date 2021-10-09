@@ -8,7 +8,7 @@ import SIP from "./SIP";
 function Compare() {
   return (
     <Router>
-      <div className="headers">
+      <div class="headers">
         <nav>
           <li>
             <Link to="/diff">Invested VS Not Invested</Link>

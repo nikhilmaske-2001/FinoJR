@@ -1,18 +1,9 @@
-.headers {
-  display: inline;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20;
-}
-
-.root {
+.container {
   display: flex;
   justify-content: center;
 }
 
-.calcbutton {
-  margin-top: 50;
+.inputFields {
+  display: flex;
+  flex-direction: column;
 }
