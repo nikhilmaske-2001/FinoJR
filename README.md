@@ -13,13 +13,16 @@
 
 1. What if money is invested vs not-invested:
    In this section, we show the difference between what if the child invested the money in any land or gold or any metal vs what if that same money is stored in a piggy bank (i.e not invested but saved)
+   ![1](https://github.com/nikhilmaske-2001/FinoJR/blob/master/images/invsnon.png)
 
 2. Investing the money in Lump sum:
    In this section, we show how money compounds if we invest the money in any scheme which gives regular fixed return.
+   ![2](https://github.com/nikhilmaske-2001/FinoJR/blob/master/images/lump.png)
 
 3. Investing the money every month:
    In this section, we show how money compounds if we invest the fix ammount of money ever
    month in any scheme which gives regular fixed return.
+   ![3](https://github.com/nikhilmaske-2001/FinoJR/blob/master/images/sip.png)
 
 To simplify this process of learning, we are using `recharts` to show nice data visualization of the compounding of money over the years.
 
