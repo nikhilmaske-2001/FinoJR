@@ -13,9 +13,7 @@ import {
 function Graph1({ profit, loss }) {
   const invested_graph = profit;
   const componded_graph = loss;
-  console.log(invested_graph);
-  console.log(componded_graph);
-  const period = componded_graph.length;
+  var period = componded_graph.length;
   const data = [{}];
 
   if (period) {
@@ -29,17 +27,17 @@ function Graph1({ profit, loss }) {
       data.push(obj);
     }
   } else {
+    period = invested_graph.length;
     for (year = 1; year <= period; year++) {
       obj = {
         name: (2021 + year).toString(),
-        invested: 0,
+        invested: invested_graph[year],
         componded: componded_graph[year],
         amt: year,
       };
       data.push(obj);
     }
   }
-  console.log(data);
 
   return (
     <Card class="graph">

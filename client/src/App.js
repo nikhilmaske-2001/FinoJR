@@ -9,17 +9,19 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <><>
       <TopBar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/compare" component={Compare} />
         {/* <Route exact path="/educational-videos" component={Home} />
-        <Route exact path="/quiz" component={Home} />
-        <Route exact path="/game" component={Home} />
-        <Route exact path="/register" component={Home} /> */}
+    <Route exact path="/quiz" component={Home} />
+    <Route exact path="/game" component={Home} />
+    <Route exact path="/register" component={Home} /> */}
       </Switch>
-    </>
+    </><div className="App">
+        <Compare />
+      </div></>
   );
 }
 

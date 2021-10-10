@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Compare.css";
@@ -8,18 +9,18 @@ import SIP from "./SIP";
 function Compare() {
   return (
     <Router>
-      <div class="headers">
-        <nav>
-          <li>
+      <div>
+        <div class="headers">
+          <Button variant="contained">
             <Link to="/diff">Invested VS Not Invested</Link>
-          </li>
-          <li>
+          </Button>
+          <Button variant="contained">
             <Link to="/monthly">Invested Monthly</Link>
-          </li>
-          <li>
+          </Button>
+          <Button variant="contained">
             <Link to="/lumpsum">Invested Lump Sum ammount</Link>
-          </li>
-        </nav>
+          </Button>
+        </div>
         <Switch>
           <Route path="/diff">
             <InvestedVsNoninvested />
