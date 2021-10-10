@@ -12,6 +12,130 @@ code {
     monospace;
 }
 
+/*Navbar*/
+.header_area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 20px 0px;
+  transition: all 0.2s linear;
+}
+
+.header_area .container {
+  position: relative;
+  background-color: white;
+}
+
+.navbar {
+  color: #111111;
+  padding: 15px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  z-index: 98;
+}
+
+.logo h2 {
+  position: relative;
+  font-size: 48px;
+  font-weight: 800;
+  color: #4863ff;
+}
+
+.navbar ul.links {
+  margin-left: auto;
+  margin-right: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease all, 0s ease background;
+  -webkit-transition: 0.4s ease all, 0s ease background;
+  -moz-transition: 0.4s ease all, 0s ease background;
+  -ms-transition: 0.4s ease all, 0s ease background;
+  -o-transition: 0.4s ease all, 0s ease background;
+}
+
+.navbar ul.links li {
+  text-transform: uppercase;
+  padding: 0 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  position: relative;
+}
+
+.navbar ul.links li a {
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.normal-link {
+  height: 20px;
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+}
+
+.nav-link:hover{
+  color: #e62652 !important;
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+
+.navbar_fixed {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
+}
+
+.navbar_fixed.header_area {
+  padding: 8px 0px;
+}
+
+.navbar_fixed.header_area .logo{
+  display: block;
+}
+
 /*Home Page*/
 section{
   position: absolute;

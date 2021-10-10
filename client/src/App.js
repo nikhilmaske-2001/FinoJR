@@ -14,8 +14,10 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/compare" component={Compare} />
-        {/* <Route exact path="/" component={Home} />
-        <Route exact path="/" component={Home} /> */}
+        {/* <Route exact path="/educational-videos" component={Home} />
+        <Route exact path="/quiz" component={Home} />
+        <Route exact path="/game" component={Home} />
+        <Route exact path="/register" component={Home} /> */}
       </Switch>
     </>
   );

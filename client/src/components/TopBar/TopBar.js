@@ -1,42 +1,27 @@
 import React from "react";
-import { AppBar, Button, Toolbar } from "@material-ui/core";
-import "./TopBar.css";
-import Home from "./pages/HomePage/Home";
 
-function TopBar() {
+const Navbar = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <div className="topbar">
-          <div className="leftButtons">
-            <Button color="inherit" component={Home} className="leftButton" to="/">
-              Home
-            </Button>
-            <Button color="inherit" className="leftButton" to="/compare">
-              Compare
-            </Button>
-            <Button color="inherit" className="leftButton" to="/educational-videos">
-              Educational Videos
-            </Button>
-            <Button color="inherit" className="leftButton" to="/quiz">
-              Quiz
-            </Button>
-            <Button color="inherit" className="leftButton" to="/game">
-              Game
-            </Button>
-          </div>
-          <div className="rightButtons">
-            <Button color="inherit" className="rightButton">
-              Login
-            </Button>
-            <Button color="inherit" className="rightButton">
-              Register
-            </Button>
-          </div>
+    <>
+      <header class="header_area">
+        <div class="container">
+            <div class="navbar d-flex align-items-center justify-content-between">
+                <a href="#" class="logo">
+                    <h2>Fino Jr.</h2>
+                </a>
+                
+                <ul class="links">
+                    <li class="normal-link"><a class="nav-link" href="/">HOME</a></li>
+                    <li class="normal-link"><a class="nav-link" href="/compare">Compare</a></li>
+                    <li class="normal-link"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="normal-link"><a class="nav-link" href="#projects">REGISTER</a></li>
+                    <li class="normal-link"><a class="nav-link" href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
         </div>
-      </Toolbar>
-    </AppBar>
+    </header>
+    </>
   );
-}
+};
 
-export default TopBar;
+export default Navbar;
