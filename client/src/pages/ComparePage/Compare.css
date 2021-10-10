@@ -1,3 +1,10 @@
+.headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: greenyellow;
+}
+
 .container {
   display: flex;
   justify-content: center;

@@ -19,6 +19,8 @@ function SIP() {
   const [formData, setFormData] = useState(initialState);
   const [investedData, setinvestedData] = useState({});
   const [compondedData, setcompoundedData] = useState({});
+  const [investmentAmount, setInvestmentAmount] = useState(0);
+  const [total, settotal] = useState(0);
 
   const calculateTotal = () => {
     var monthly_investment = +formData.investment;
@@ -43,8 +45,8 @@ function SIP() {
     total = Math.round(total);
     setinvestedData(invested_graph);
     setcompoundedData(expected_graph);
-    console.log(investedData);
-    console.log(compondedData);
+    setInvestmentAmount(investment_amount);
+    settotal(total);
   };
 
   return (
@@ -92,9 +94,9 @@ function SIP() {
             Calculate
           </Button>
           <Box>
-            Invested Amount: ₹{} <br />
-            Total Amount: ₹ {} <br />
-            Wealth Gain: ₹ {}
+            Invested Amount: ₹{investmentAmount} <br />
+            Total Amount: ₹ {total} <br />
+            Wealth Gain: ₹ {total - investmentAmount}
             <br />
           </Box>
         </CardContent>
