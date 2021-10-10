@@ -37,6 +37,7 @@ function LumpSum() {
       compounded.push(total);
     }
     setprofitGraph(compounded);
+    setlossGraph([]);
     setTotal(total);
     setInvestment(investment);
   };
