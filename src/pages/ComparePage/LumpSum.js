@@ -23,6 +23,7 @@ function LumpSum() {
   const [total, setTotal] = useState(0);
   const [profit, setprofitGraph] = useState([]);
   const [loss, setlossGraph] = useState([]);
+  const [showData, setShowData] = useState(false);
 
   const calculateTotal = () => {
     var investment = +formData.investment;
@@ -40,6 +41,7 @@ function LumpSum() {
     setlossGraph([]);
     setTotal(total);
     setInvestment(investment);
+    setShowData(true);
   };
 
   return (
@@ -86,12 +88,14 @@ function LumpSum() {
           >
             Calculate
           </Button>
-          <Box>
-            Invested Amount: ₹{investment} <br />
-            Total Amount: ₹ {total} <br />
-            Wealth Gain: ₹ {total - investment}
-            <br />
-          </Box>
+          {showData && (
+            <Box>
+              Invested Amount: ₹{investment} <br />
+              Total Amount: ₹ {total} <br />
+              Wealth Gain: ₹ {total - investment}
+              <br />
+            </Box>
+          )}
         </CardContent>
       </Card>
       <Graph1 profit={profit} loss={loss} />
