@@ -1,7 +1,8 @@
 # How to setup the development environment ?
 
-1. Clone this repository and do `cd client`
+1. Clone this repository and do `cd FinoJR`
 2. Run command `npm install` and then `npm start`
+3. Open `localhost` in the browser [Default port is 3000 so open `http://localhost:3000` in browser]
 
 # Project for HackX by Scaler
 
@@ -46,13 +47,14 @@ To simplify this process of learning, we are using `recharts` to show nice data 
 
 ## How to start working on the issue
 
-1. *Fork* the repository. You can do this by clicking the Fork button on the top of the repository.
+1. _Fork_ the repository. You can do this by clicking the Fork button on the top of the repository.
 2. In the terminal window of your computer, navigate to the folder where you want to save the repository.
-3. *Clone* the repository by typing the following command:
+3. _Clone_ the repository by typing the following command:
 
 ```sh
 git clone <repository url>
 ```
+
 4. Create a new branch in your repository and navigate to it. This can be done by
 
 ```sh
@@ -64,12 +66,11 @@ git checkout -b <branch name>
 
 ## How to submit a Pull Request
 
-* Once you update your repository, GitHub automatically shows you the option to submit a Pull Request.
-* Another way to submit a Pull Request is, navigate to the Pull Requests tab in the original repository and click on "New Pull Request"
+- Once you update your repository, GitHub automatically shows you the option to submit a Pull Request.
+- Another way to submit a Pull Request is, navigate to the Pull Requests tab in the original repository and click on "New Pull Request"
 
 ### Before you submit a Pull Request
 
 Make sure you are making proper commits. A proper commit would be including the exact changes you made.
 
 > Example: "Added Documentation" would be an ideal commit. "Fix" or "Update" are examples of bad commits.
-
