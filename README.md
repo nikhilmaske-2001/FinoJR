@@ -31,3 +31,45 @@ To simplify this process of learning, we are using `recharts` to show nice data 
 1. ReactJs
 2. MaterialUI
 3. Recharts library
+
+# Contribution Guidelines
+
+**Option 1**: Find an existing issue
+
+1. Navigate to the issues tab in the repository where you can find the list of open issues that you can contribute to
+2. Find an issue you are interested in, and ask for it to be assigned to you in the comments.
+
+**Option 2**: Report an Issue
+
+1. If you come across some issue in the project, or if you think you could make something better, create a new issue.
+2. This can be done by navigating to the Issues tab in the repository and clicking on "New Issue"
+
+## How to start working on the issue
+
+1. *Fork* the repository. You can do this by clicking the Fork button on the top of the repository.
+2. In the terminal window of your computer, navigate to the folder where you want to save the repository.
+3. *Clone* the repository by typing the following command:
+
+```sh
+git clone <repository url>
+```
+4. Create a new branch in your repository and navigate to it. This can be done by
+
+```sh
+git checkout -b <branch name>
+```
+
+5. Make the necessary changes, and push them to your GitHub repository.
+6. Submit a pull request in the original repository.
+
+## How to submit a Pull Request
+
+* Once you update your repository, GitHub automatically shows you the option to submit a Pull Request.
+* Another way to submit a Pull Request is, navigate to the Pull Requests tab in the original repository and click on "New Pull Request"
+
+### Before you submit a Pull Request
+
+Make sure you are making proper commits. A proper commit would be including the exact changes you made.
+
+> Example: "Added Documentation" would be an ideal commit. "Fix" or "Update" are examples of bad commits.
+
