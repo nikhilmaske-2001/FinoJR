@@ -5,21 +5,34 @@ import "./Compare.css";
 import InvestedVsNoninvested from "./Invsnon";
 import LumpSum from "./LumpSum";
 import SIP from "./SIP";
+import Box from "@material-ui/core/Box";
 
 function Compare() {
   return (
     <Router>
       <div>
         <div class="headers">
-          <Button variant="contained">
-            <Link to="/diff">Invested VS Not Invested</Link>
-          </Button>
-          <Button variant="contained">
-            <Link to="/monthly">Invested Monthly</Link>
-          </Button>
-          <Button variant="contained">
-            <Link to="/lumpsum">Invested Lump Sum ammount</Link>
-          </Button>
+          <Box px={2} py={1}>
+            <Button variant="contained">
+              <Link to="/diff" style={{ textDecoration: "none" }}>
+                Invested VS Not Invested
+              </Link>
+            </Button>
+          </Box>
+          <Box px={2} py={1}>
+            <Button variant="contained">
+              <Link to="/monthly" style={{ textDecoration: "none" }}>
+                Invested Monthly
+              </Link>
+            </Button>
+          </Box>
+          <Box px={2} py={1}>
+            <Button variant="contained">
+              <Link to="/lumpsum" style={{ textDecoration: "none" }}>
+                Invested Lump Sum ammount
+              </Link>
+            </Button>
+          </Box>
         </div>
         <Switch>
           <Route path="/diff">

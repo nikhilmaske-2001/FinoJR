@@ -6,11 +6,11 @@
 
 # Project for HackX by Scaler
 
-**Theme**: Build an application to educate student about financial education
+**Theme**: Build an application to teach student's about financial education
 
 **Short Project Idea**: Show children how money compounding works by data visualization.
 
-**Brief Information**: To educate children about financial education, we have implemented 3 sections:
+**Brief Information**: To teach children about financial education, we have implemented 3 sections:
 
 1. What if money is invested vs not-invested:
    In this section, we show the difference between what if the child invested the money in any land or gold or any metal vs what if that same money is stored in a piggy bank (i.e not invested but saved)

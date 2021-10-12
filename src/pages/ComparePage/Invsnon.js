@@ -20,9 +20,11 @@ export const chartColors = ["#e34522", "#14b514"];
 function Invsnon() {
   const [formData, setFormData] = useState(initialState);
   const [investedTotal, setinvestedTotal] = useState(0);
+  const [investedTotal1, setinvestedTotal1] = useState(0);
   const [not_investedTotal, setnotinvestedTotal] = useState(0);
   const [profit, setprofitGraph] = useState([]);
   const [loss, setlossGraph] = useState([]);
+  const [showData, setShowData] = useState(false);
 
   const calculateTotal = () => {
     var investment = +formData.investment;
@@ -41,10 +43,15 @@ function Invsnon() {
       investedGraph.push(profit);
       not_investedGraph.push(loss);
     }
-    setinvestedTotal(investedGraph[investedGraph.length - 1]);
-    setnotinvestedTotal(not_investedGraph[not_investedGraph.length - 1]);
+    const investedGraphData = investedGraph[investedGraph.length - 1] || 0;
+    const not_investedGraphData =
+      not_investedGraph[not_investedGraph.length - 1] || 0;
+    setinvestedTotal(investedGraphData);
+    setnotinvestedTotal(not_investedGraphData);
     setprofitGraph(investedGraph);
     setlossGraph(not_investedGraph);
+    setShowData();
+    setShowData(true);
   };
 
   return (
@@ -91,12 +98,15 @@ function Invsnon() {
           >
             Calculate
           </Button>
-          <Box>
-            Invested Amount Today: {investedTotal} <br />
-            Not Invested Amount: ₹ {not_investedTotal}
-            <br />
-            (Note: Assuming 6% inflation rate)
-          </Box>
+          {showData && (
+            <Box>
+              Invested Amount Today: {investedTotal}
+              <br />
+              Not Invested Amount: ₹ {not_investedTotal}
+              <br />
+              (Note: Assuming 6% inflation rate)
+            </Box>
+          )}
         </CardContent>
       </Card>
       <Graph1 profit={profit} loss={loss} />
