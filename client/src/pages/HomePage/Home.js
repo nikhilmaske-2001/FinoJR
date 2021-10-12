@@ -22,7 +22,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-md-8">
-                  <img src={web} className="img-fluid"></img>
+                  <img src={web} className="img-fluid" alt="hero-img"></img>
                 </div>
               </div>
             </div>
