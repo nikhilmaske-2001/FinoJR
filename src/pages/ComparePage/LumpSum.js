@@ -46,6 +46,7 @@ function LumpSum() {
 
   return (
     <div>
+      <br />
       <Card class="container" variant="outlined">
         <CardContent>
           <Typography>
@@ -61,6 +62,7 @@ function LumpSum() {
                 setFormData({ ...formData, investment: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -70,6 +72,7 @@ function LumpSum() {
                 setFormData({ ...formData, period: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -80,16 +83,19 @@ function LumpSum() {
               }
             />
           </div>
+          <br />
           <Button
             fullWidth
             variant="outlined"
             color="primary"
+            style={{ backgroundColor: "#2d8efc", color: "#FFFFFF" }}
             onClick={calculateTotal}
           >
             Calculate
           </Button>
           {showData && (
             <Box>
+              <br />
               Invested Amount: ₹{investment} <br />
               Total Amount: ₹ {total} <br />
               Wealth Gain: ₹ {total - investment}

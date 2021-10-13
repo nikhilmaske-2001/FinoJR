@@ -13,22 +13,40 @@ function Compare() {
       <div>
         <div class="headers">
           <Box px={2} py={1}>
-            <Button variant="contained">
-              <Link to="/diff" style={{ textDecoration: "none" }}>
+            <Button
+              style={{ backgroundColor: "#fcfc19", color: "#f5f2f3" }}
+              variant="contained"
+            >
+              <Link
+                to="/diff"
+                style={{ textDecoration: "none", color: "#050505" }}
+              >
                 Invested VS Not Invested
               </Link>
             </Button>
           </Box>
           <Box px={2} py={1}>
-            <Button variant="contained">
-              <Link to="/monthly" style={{ textDecoration: "none" }}>
+            <Button
+              style={{ backgroundColor: "#fcfc19", color: "#f5f2f3" }}
+              variant="contained"
+            >
+              <Link
+                to="/monthly"
+                style={{ textDecoration: "none", color: "#050505" }}
+              >
                 Invested Monthly
               </Link>
             </Button>
           </Box>
           <Box px={2} py={1}>
-            <Button variant="contained">
-              <Link to="/lumpsum" style={{ textDecoration: "none" }}>
+            <Button
+              style={{ backgroundColor: "#fcfc19", color: "#f5f2f3" }}
+              variant="contained"
+            >
+              <Link
+                to="/lumpsum"
+                style={{ textDecoration: "none", color: "#050505" }}
+              >
                 Invested Lump Sum ammount
               </Link>
             </Button>
