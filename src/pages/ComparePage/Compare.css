@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: greenyellow;
+  background-color: black;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  background-color: #edf9ff;
+  background-color: white;
 }
 
 .inputFields {
@@ -23,7 +23,7 @@
 .graph {
   display: flex;
   justify-content: center;
-  background-color: #edf9ff;
+  background-color: white;
 }
 
 .graph {

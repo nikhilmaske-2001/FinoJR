@@ -68,6 +68,7 @@ function SIP() {
                 setFormData({ ...formData, investment: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -77,6 +78,7 @@ function SIP() {
                 setFormData({ ...formData, period: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -86,11 +88,14 @@ function SIP() {
                 setFormData({ ...formData, expected_return: e.target.value })
               }
             />
+            <br />
           </div>
+          <br />
           <Button
             fullWidth
             variant="outlined"
             color="primary"
+            style={{ backgroundColor: "#2d8efc", color: "#FFFFFF" }}
             onClick={calculateTotal}
           >
             Calculate
@@ -98,6 +103,7 @@ function SIP() {
 
           {showData && (
             <Box>
+              <br />
               Invested Amount: ₹{investmentAmount} <br />
               Total Amount: ₹ {total} <br />
               Wealth Gain: ₹ {total - investmentAmount}

@@ -53,8 +53,8 @@ function Graph1({ profit, loss }) {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="invested" stroke="#82ca9d" />
-          <Line type="monotone" dataKey="componded" stroke="#fc3903" />
+          <Line type="monotone" dataKey="invested" stroke="#08bd14" />
+          <Line type="monotone" dataKey="componded" stroke="#f0132d" />
         </LineChart>
       </div>
     </Card>

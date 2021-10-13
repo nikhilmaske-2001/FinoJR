@@ -56,6 +56,7 @@ function Invsnon() {
 
   return (
     <div>
+      <br />
       <Card class="container" variant="outlined">
         <CardContent>
           <Typography>
@@ -71,6 +72,7 @@ function Invsnon() {
                 setFormData({ ...formData, investment: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -80,6 +82,7 @@ function Invsnon() {
                 setFormData({ ...formData, period: e.target.value })
               }
             />
+            <br />
             <TextField
               required
               id="outlined-basic"
@@ -90,16 +93,19 @@ function Invsnon() {
               }
             />
           </div>
+          <br />
           <Button
             fullWidth
             variant="outlined"
             color="primary"
+            style={{ backgroundColor: "#2d8efc", color: "#FFFFFF" }}
             onClick={calculateTotal}
           >
             Calculate
           </Button>
           {showData && (
             <Box>
+              <br />
               Invested Amount Today: {investedTotal}
               <br />
               Not Invested Amount: ₹ {not_investedTotal}
